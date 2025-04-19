@@ -14,5 +14,5 @@ This model we will implement
 - Get Books by Name Author: It will return Books for Name not necessary that be equals name.
 - Get Authors by Age Author: It will return Authors for Age. The same performance that "Get Books by Rating"
 - Get Books by Title: It will return Books for Title. The same performance that "Get books by name author"
-- 
+
 ![special_breakpoints](/img/special_breakpoints.png)
