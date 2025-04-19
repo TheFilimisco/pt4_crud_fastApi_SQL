@@ -1,0 +1,221 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "library",
+    "collectionId": "cb157db9-be6c-460c-8085-426aea087873",
+    "dateExported": "2025-04-19T16:15:18.456Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "43c5648d-de86-49c3-bf33-59cc62eec62a",
+            "colId": "cb157db9-be6c-460c-8085-426aea087873",
+            "containerId": "",
+            "name": "authors",
+            "url": "http://127.0.0.1:8000/authors/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2025-04-19T10:47:13.611Z",
+            "modified": "2025-04-19T10:47:23.111Z",
+            "headers": []
+        },
+        {
+            "_id": "724cfa87-9f3d-497b-a343-747774f851e6",
+            "colId": "cb157db9-be6c-460c-8085-426aea087873",
+            "containerId": "",
+            "name": "read_author",
+            "url": "http://127.0.0.1:8000/authors/2",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2025-04-19T10:47:44.146Z",
+            "modified": "2025-04-19T11:19:16.795Z",
+            "headers": []
+        },
+        {
+            "_id": "79017488-57d7-4e9f-9cf0-eb2d202e67fb",
+            "colId": "cb157db9-be6c-460c-8085-426aea087873",
+            "containerId": "",
+            "name": "create_author",
+            "url": "http://127.0.0.1:8000/authors/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2025-04-19T11:06:18.410Z",
+            "modified": "2025-04-19T11:16:34.462Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"Gabriel Garcia Marquez\",\n    \"age\": 45,\n    \"description\": \"Is a writter from Colombia\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "0f80fb91-f042-4b4b-9eb8-3fafc4e88300",
+            "colId": "cb157db9-be6c-460c-8085-426aea087873",
+            "containerId": "",
+            "name": "update_author",
+            "url": "http://127.0.0.1:8000/authors/4",
+            "method": "PATCH",
+            "sortNum": 40000,
+            "created": "2025-04-19T11:32:56.755Z",
+            "modified": "2025-04-19T11:34:51.190Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"Gabriel Garcia Marquez X2\",\n    \"age\": 49,\n    \"description\": \"Is a writter from Colombia that he\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "cf87cc9b-5cec-4a9d-b062-2ec35994d24b",
+            "colId": "cb157db9-be6c-460c-8085-426aea087873",
+            "containerId": "",
+            "name": "delete_auhor",
+            "url": "http://127.0.0.1:8000/authors/4",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2025-04-19T11:43:34.354Z",
+            "modified": "2025-04-19T11:44:04.652Z",
+            "headers": []
+        },
+        {
+            "_id": "9f46716a-7ba3-4fcb-903e-089777789947",
+            "colId": "cb157db9-be6c-460c-8085-426aea087873",
+            "containerId": "",
+            "name": "genres",
+            "url": "http://127.0.0.1:8000/genres/",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2025-04-19T13:14:50.005Z",
+            "modified": "2025-04-19T13:19:21.844Z",
+            "headers": []
+        },
+        {
+            "_id": "a19f3f61-3463-4a0c-a5b6-4f51fc3c2ced",
+            "colId": "cb157db9-be6c-460c-8085-426aea087873",
+            "containerId": "",
+            "name": "read_genre",
+            "url": "http://127.0.0.1:8000/genres/1",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2025-04-19T13:20:18.125Z",
+            "modified": "2025-04-19T13:20:35.956Z",
+            "headers": []
+        },
+        {
+            "_id": "c3c9e31a-4b67-44a4-a77f-54e47e32ea57",
+            "colId": "cb157db9-be6c-460c-8085-426aea087873",
+            "containerId": "",
+            "name": "create_genre",
+            "url": "http://127.0.0.1:8000/genres/",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2025-04-19T13:22:20.714Z",
+            "modified": "2025-04-19T13:23:56.084Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"Fantasy\",\n    \"description\": \"A genre about magic\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "0fba6276-91f0-41b6-a92c-9f4272fb20f3",
+            "colId": "cb157db9-be6c-460c-8085-426aea087873",
+            "containerId": "",
+            "name": "update_genre",
+            "url": "http://127.0.0.1:8000/genres/4",
+            "method": "PATCH",
+            "sortNum": 90000,
+            "created": "2025-04-19T13:26:55.565Z",
+            "modified": "2025-04-19T13:27:27.424Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"Fantasy2\",\n    \"description\": \"A genre about magic2\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "5557a5d3-df9a-4998-9211-6634cc3d5d78",
+            "colId": "cb157db9-be6c-460c-8085-426aea087873",
+            "containerId": "",
+            "name": "delete_genre",
+            "url": "http://127.0.0.1:8000/genres/4",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2025-04-19T13:29:02.901Z",
+            "modified": "2025-04-19T14:07:35.494Z",
+            "headers": []
+        },
+        {
+            "_id": "b423e640-af8f-416a-afcb-c4d7f15f9d57",
+            "colId": "cb157db9-be6c-460c-8085-426aea087873",
+            "containerId": "",
+            "name": "books",
+            "url": "http://127.0.0.1:8000/books/",
+            "method": "GET",
+            "sortNum": 105000,
+            "created": "2025-04-19T14:29:36.062Z",
+            "modified": "2025-04-19T14:30:08.717Z",
+            "headers": []
+        },
+        {
+            "_id": "2319ad3f-187d-470b-a000-9f81ac5fe5ae",
+            "colId": "cb157db9-be6c-460c-8085-426aea087873",
+            "containerId": "",
+            "name": "read_book",
+            "url": "http://127.0.0.1:8000/book/3",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2025-04-19T14:14:48.925Z",
+            "modified": "2025-04-19T14:30:24.032Z",
+            "headers": []
+        },
+        {
+            "_id": "20cb7cfe-4fce-45e3-b5d7-4b1d1c953448",
+            "colId": "cb157db9-be6c-460c-8085-426aea087873",
+            "containerId": "",
+            "name": "create_book",
+            "url": "http://127.0.0.1:8000/books/",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2025-04-19T14:20:03.337Z",
+            "modified": "2025-04-19T14:22:16.889Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"title\": \"Harry Potter and the Philosopher's Stone\",\n    \"description\": \"A boy magic\",\n    \"rating\": 8,\n    \"author_id\": 3\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "5f828527-6683-46ab-856b-1eac0cfacc81",
+            "colId": "cb157db9-be6c-460c-8085-426aea087873",
+            "containerId": "",
+            "name": "update_book",
+            "url": "http://127.0.0.1:8000/books/4",
+            "method": "PATCH",
+            "sortNum": 130000,
+            "created": "2025-04-19T14:25:21.236Z",
+            "modified": "2025-04-19T14:26:19.889Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"title\": \"harry potter and the prisoner of azkaban\",\n    \"description\": \"A boy magic\",\n    \"rating\": 8,\n    \"author_id\": 3\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "de8c9102-7057-4353-b784-cc9387b7bcb7",
+            "colId": "cb157db9-be6c-460c-8085-426aea087873",
+            "containerId": "",
+            "name": "delete_book",
+            "url": "http://127.0.0.1:8000/books/4",
+            "method": "DELETE",
+            "sortNum": 140000,
+            "created": "2025-04-19T14:27:47.021Z",
+            "modified": "2025-04-19T14:28:08.250Z",
+            "headers": []
+        }
+    ],
+    "ref": "fEL-UQWwSdwAjtEVM45zGOXdWSYCnzeEizbg5XTMiVueh-DNvx1uoHku7iOkQFsGrFSB2WlXHmUiBvte8CmdBw"
+}
