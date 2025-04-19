@@ -59,7 +59,7 @@ def create_genre():
     print(data.status_code)
     print(data.json())
 
-def update_genre(genre_id):
+def update_genre(genre_id: int):
     genre_update = {
     "name": "Fantasy2",
     "description": "A genre about magic2"}
@@ -109,7 +109,38 @@ def delete_book(book_id):
     print(data.status_code)
     print(data.json())
 
-#
+# Special BreakPoints
+
+def get_books_by_genre(genre_id:int):
+    data = requests.get(f"{books_url}/genre/{genre_id}")
+    print(data.status_code)
+    for book in data.json()["books"]:
+        print(book)
+
+def get_books_by_rating(rating:int):
+    data = requests.get(f"{books_url}/rating/{rating}")
+    print(data.status_code)
+    for book in data.json():
+        print(book)
+
+
+def get_books_by_name_author(name_author:str):
+    data = requests.get(f"{books_url}/author/{name_author}")
+    print(data.status_code)
+    for book in data.json():
+        print(book)
+
+def get_author_by_age(age_author:int):
+    data = requests.get(f"{authors_url}/age/{age_author}")
+    print(data.status_code)
+    for author in data.json():
+        print(author)
+
+def get_books_by_title(title:str):
+    data = requests.get(f"{books_url}/title/{title}")
+    print(data.status_code)
+    for book in data.json():
+        print(book)
 
 if __name__ == "__main__":
     print("Authors")
@@ -131,5 +162,12 @@ if __name__ == "__main__":
     update_book(4)
     delete_book(4)
     print("Special Breakpoints")
+    get_books_by_genre(1)
+    get_books_by_rating(4)
+    get_books_by_name_author("Stephen")
+    get_author_by_age(25)
+    get_books_by_title("Alice")
+
+
 
 
