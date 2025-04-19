@@ -111,7 +111,7 @@ def read_books(offset: int = 0, limit: int = Query(default=100, le=100)):
         books = session.exec(select(Books).offset(offset).limit(limit)).all()
         return books
 
-@app.get("/book/{book_id}",response_model=BookPublicWithGenres)
+@app.get("/books/{book_id}",response_model=BookPublicWithGenres)
 def read_book(book_id: int, session: Session = Depends(get_session)):
     book = session.get(Books, book_id)
     if not book:
@@ -155,7 +155,7 @@ def delete_book(book_id: int):
 
 # Get Books for genre_id
 @app.get("/books/genre/{genre_id}",response_model=GenrePublicWithBooks)
-def read_genre(genre_id: int, session: Session = Depends(get_session)):
+def get_books_by_id_genre(genre_id: int, session: Session = Depends(get_session)):
     genre = session.get(Genres, genre_id)
     if not genre:
         raise HTTPException(status_code=404, detail="Genre not found")
@@ -163,7 +163,7 @@ def read_genre(genre_id: int, session: Session = Depends(get_session)):
 
 # Get Books by Rating
 @app.get("/books/rating/{rating}", response_model=List[BooksPublic])
-def read_rating(rating: int, inverse: bool=False, reverse: bool=False, offset: int = 0, limit: int = Query(default=100, le=100)):
+def get_books_by_rating(rating: int, inverse: bool=False, reverse: bool=False, offset: int = 0, limit: int = Query(default=100, le=100)):
 #    books_formatted = []
 #    with Session(engine) as session:
 #        books = session.exec(select(Books).offset(offset).limit(limit)).all()
@@ -201,7 +201,7 @@ def get_books_by_name_author(name:str, offset: int = 0, limit: int = Query(defau
             raise HTTPException(status_code=404, detail="Book not found")
         return books
 
-# Get Auhtors by Name
+# Get Auhtors by Age
 @app.get("/authors/age/{age}", response_model=List[AuthorsPublic])
 def get_authors_by_age(age: int, inverse: bool=False, reverse: bool=False, offset: int = 0, limit: int = Query(default=100, le=100)):
     with Session(engine) as session:

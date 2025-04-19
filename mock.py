@@ -26,7 +26,7 @@ def create_sample():
 
         # Authors
         author_stephen = Authors(name="Stephen King", age=43, description="Born on USA is Writer... ")
-        author_ernesto = Authors(name="Enesto Sabato", age=35, description="Born on Venezuela is Writer... ")
+        author_ernesto = Authors(name="Ernesto Sabato", age=35, description="Born on Venezuela is Writer... ")
         author_lewis = Authors(name="Lewis Carroll", age=45, description="Lewis Carroll, was an English author, poet, mathematician, photographer ")
 
         session.add(author_stephen)
